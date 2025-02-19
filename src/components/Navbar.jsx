@@ -58,13 +58,13 @@ const Navbar = () => {
             className="flex items-center gap-2"
             onClick={() => {
               setActive('');
-              window.scrollTo(0, 0);
+              window.scrollTo(2, 2);
             }}
           >
             <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
-              LOHIT&nbsp;
-              <span className="sm:block hidden">KOLLURI</span>
+              DAGIM&nbsp;
+              <span className="sm:block hidden">TAMIRAT</span>
             </p>
           </Link>
           {renderNavLinks(false)}

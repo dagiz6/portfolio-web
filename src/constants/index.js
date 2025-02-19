@@ -20,6 +20,16 @@ import {
   mathwork,
   CompileVortex,
   eduskill,
+  mySql,
+  php,
+  bootstrap,
+  express,
+  netflix,
+  donation,
+  Emenu,
+  tictac,
+  weather,
+  event,
 } from "../assets";
 
 export const navLinks = [
@@ -28,8 +38,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -38,20 +48,20 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
+  { title: "javascript", icon: javascript },
   { title: "C++", icon: cpp },
-  { title: "Python", icon: python },
+  { title: "php", icon: php },
   { title: "Java", icon: java },
 ];
 
 export const technologies = [
   { name: "HTML 5", icon: html },
   { name: "CSS 3", icon: css },
-  { name: "JavaScript", icon: javascript },
   { name: "Rect JS", icon: reactjs },
-  { name: "Tailwind CSS", icon: tailwind },
+  { name: "bootStrap", icon: bootstrap },
+  { name: "expressJs", icon: express },
   { name: "Node JS", icon: nodejs },
-  { name: "Three JS", icon: threejs },
+  { name: "mySql", icon: mySql },
   { name: "git", icon: git },
 ];
 
@@ -95,76 +105,79 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "Netflix Clone",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "A responsive Netflix-inspired streaming platform built with React, featuring user authentication, movie browsing, and trailer previews. Integrated Firebase for authentication and TMDB API for dynamic content.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
-      { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Axios", color: "green-text-gradient" },
+      { name: "Node", color: "pink-text-gradient" },
+      { name: "Movies API by TMDB", color: "yellow-text-gradient" },
     ],
-    image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    image: netflix,
+    source_code_link: "https://github.com/dagiz6/netflix-clone",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "Donation App",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      " A secure donation platform developed with React, allowing users to contribute seamlessly via Chapa payment gateway. Features real-time transaction tracking and a user-friendly UI.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Node", color: "green-text-gradient" },
+      { name: "Payment integration with chapa", color: "white-text-gradient" },
+    ],
+    image: donation,
+    source_code_link: "https://github.com/dagiz6/donation-web-app",
+  },
+  {
+    name: "E-menu",
+    description:
+      "A digital restaurant menu built with React, offering an interactive interface for browsing food items. Includes category filtering, search functionality, and an elegant UI.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Props", color: "green-text-gradient" },
+      { name: "Express", color: "pink-text-gradient" },
+    ],
+    image: Emenu,
+    source_code_link:
+      "https://github.com/dagiz6/E-menu",
+  },
+  {
+    name: "Weather App",
+    description:
+      "A minimalistic weather application using vanilla JavaScript, fetching real-time weather data via an API. Displays temperature, humidity, and forecasts with a clean UI.",
     tags: [
       { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
     ],
-    image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+    image: weather,
+    source_code_link: "https://github.com/dagiz6/PRODIGY_WD_05",
   },
   {
-    name: "Mental Health Fitness Tracker",
+    name: "Tic-Tac-Toe App",
     description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
-    tags: [
-      { name: "Machine Learning", color: "blue-text-gradient" },
-      { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
-    ],
-    image: mhft,
-    source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
-  },
-  {
-    name: "PayloadMaster",
-    description:
-      "Tool to automate payload creation using the Metasploit framework",
-    tags: [
-      { name: "shell", color: "blue-text-gradient" },
-    ],
-    image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
-  },
-  {
-    name: "CompileVortex",
-    description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "A classic Tic-Tac-Toe game built with JavaScript, featuring interactive gameplay and a simple yet engaging UI. Supports two-player mode with instant win detection.",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
       { name: "HTML", color: "pink-text-gradient" },
     ],
-    image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
+    image: tictac,
+    source_code_link: "https://github.com/dagiz6/PRODIGY_WD_03",
   },
   {
-    name: "Sketcher",
+    name: "Event Registration",
     description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
+      `A PHP-based event registration system with secure login/logout functionality. Sends automated email confirmations via EmailJS and manages attendee registrations efficiently.`,
     tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
+      { name: "PHP", color: "blue-text-gradient" },
+      { name: "Javascript", color: "green-text-gradient" },
+      { name: "CSS", color: "pink-text-gradient" },
+      { name: "EmailJs for sending confirmation email", color: "white-text-gradient" },
     ],
-
-    image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    image: event,
+    source_code_link: "https://github.com/dagiz6/event-registration",
   },
+
 ];

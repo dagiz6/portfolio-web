@@ -40,11 +40,9 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a Computer Science student at SRM University and multilingual speaker with a passion
-        for ethical hacking, artificial intelligence, and neural language processing. I am looking
-        to join a company that values innovation, collaboration, and continuous learning and am
-        confident that my enthusiasm and drive will help me succeed in any role that leverages my
-        passion for technology.
+       passionate MERN Stack Developer and Computer Science student at Jimma University. I specialize in building dynamic, high-performance web applications using Mysql, Express.js, React, and Node.js. With a strong foundation in both front-end and back-end development, I love crafting seamless user experiences and scalable solutions.
+
+I completed a Web Development internship at Prodigy InfoTech, earning a Certificate of Completion and a Letter of Recommendation for my outstanding performance. Beyond web development, I’m deeply interested in ethical hacking, artificial intelligence, and natural language processing.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
