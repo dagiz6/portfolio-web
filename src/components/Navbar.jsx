@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = '/Resume.pdf';
+    const resumeUrl = 'https://dagim-tamirat-cv.tiiny.site/';
     window.open(resumeUrl);
   };
 
